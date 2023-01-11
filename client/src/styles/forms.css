@@ -1,0 +1,145 @@
+:root {
+  --col-primary: #c9874a;
+  --col-black: #000;
+  --col-blue: #0094ca;
+  --col-white: #fff;
+  --col-yellow: #f9b617;
+  --col-light-grey: #f8f8f8;
+}
+.group {
+  position: relative;
+  margin: 45px 0;
+}
+.group .form-input {
+  background: none;
+  background-color: white;
+  color: grey;
+  font-size: 14px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 100%;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid grey;
+  margin: 25px 0;
+}
+.group .form-input:focus {
+  outline: none;
+}
+.group .form-input:focus ~ .form-input-label {
+  top: -14px;
+  font-size: 12px;
+  color: black;
+}
+.group input[type='password'] {
+  letter-spacing: 0.3em;
+}
+.group .form-input-label {
+  color: grey;
+  font-size: 16px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  transition: 300ms ease all;
+}
+.group .form-input-label.shrink {
+  top: -14px;
+  font-size: 12px;
+  color: black;
+}
+.custom-button {
+  min-width: 165px;
+  width: auto;
+  height: 50px;
+  letter-spacing: 0.5px;
+  line-height: 50px;
+  padding: 0 35px 0 35px;
+  font-size: 15px;
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Open Sans Condensed';
+  font-weight: bolder;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+}
+.custom-button:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+.custom-button.google-sign-in {
+  background-color: #4285f4;
+  color: white;
+}
+.custom-button.google-sign-in:hover {
+  background-color: #357ae8;
+  border: none;
+}
+.custom-button.inverted {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+.custom-button.inverted:hover {
+  background-color: black;
+  color: white;
+  border: none;
+}
+.sign-up {
+  display: flex;
+  flex-direction: column;
+  width: 380px;
+}
+.sign-up .title {
+  margin: 10px 0;
+}
+.sign-in-and-sign-up {
+  width: 850px;
+  display: flex;
+  justify-content: space-between;
+  margin: 30px auto;
+}
+/* test */
+.signin input {
+  border-radius: 10px 10px 0px 0px;
+  width: 90%;
+  padding: 27px 15px 8px 15px;
+  background: var(--col-light-grey);
+  border-bottom: 1px solid #dadada;
+  transition: 0.2s all ease-in-out;
+}
+input {
+  font-size: inherit;
+  font-family: 'Museo Sans', 'Raleway', sans-serif;
+}
+input:focus {
+  outline: none;
+}
+.input {
+  position: relative;
+  margin-bottom: 30px;
+}
+.input label {
+  position: absolute;
+  z-index: 1;
+  bottom: 14px;
+  font-size: 14px;
+  left: 15px;
+  color: grey;
+  pointer-events: none;
+  transition: 0.2s all ease-in-out;
+}
+.signin input:focus {
+  border-bottom: 2px solid var(--col-black-opacity);
+  outline: none;
+}
+.signin input:focus + label {
+  color: var(--col-black-opacity);
+  font-size: 12px;
+  transform: translateY(-140%);
+}

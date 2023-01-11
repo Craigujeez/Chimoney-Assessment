@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FormInput component should render FormInput component 1`] = `undefined`;
+
+exports[`should render Button component 1`] = `ShallowWrapper {}`;
